@@ -31,11 +31,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(cb_luu.isChecked()){
-                    dialog.setMessage("chao mung ban dang nhap he thong,thong tin cua ban da duoc luu");
+                    dialog.setMessage("chao mung ban dang nhap he thong,thong tin cua ban da duoc luu").show();
                 }
                 else {
-                    dialog.setMessage("chao mung ban dang nhap he thong,thong tin cua ban khong duoc luu");
+                    dialog.setMessage("chao mung ban dang nhap he thong,thong tin cua ban khong duoc luu").show();
                 }
+            }
+        });
+        Button btnThoat=findViewById(R.id.btn_Thoat);
+        btnThoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.setMessage("da thoat").show();
+
             }
         });
     }
